@@ -1,13 +1,29 @@
+
+/* COLORS
+#f18119 (orange)
+#404040 (dark)
+#fff (light)
+#ff713b - #ffa51d (gradient)
+*/
+
+
 body {
     margin: 0;
-    font-family: 'Source Sans Pro', sans-serif;
-    text-align: center;
+    color: #404040;
+    
 }
 
 
 /********
 TYPOGRAPHY
 ********/
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+}
 
 strong {
     font-weight: 900;
@@ -16,18 +32,74 @@ strong {
 h1 {
     font-size: 2.25rem;
     font-weight: 400;
+    color: #fff;
+    padding: 2.5em 1em;
+    max-width: 500px;
 }
 
 h2 {
     font-size: 1.3125rem;
+    margin: 1.5em 0 .5em;
 }
 
-body {
-    font-size: 1rem;
-    font-weight: 400;
+h1 + p,
+h2 + p {
+    color: #f18119;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 1.5em;
 }
+
 
 .small-text {
     font-size: 0.625rem;
+    letter-spacing: 1px;
 }
+
+.top-text {
+    color: #f18119;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 900;
+    order: -1;
+}
+
+.intro {
+    background-image: url("longonot.jpg");
+    background-color: dimgray;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/********
+LAYOUT
+********/
+
+.main-content {
+    width: 80%;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

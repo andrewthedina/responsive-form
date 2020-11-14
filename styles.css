@@ -43,7 +43,7 @@ h2 {
     font-weight: 900;
     letter-spacing: 1px;
     text-transform: uppercase;
-    margin: 0 0 1.5em;
+    margin: 0;
 }
 
 
@@ -66,8 +66,7 @@ LAYOUT
 
 .intro {
     background-image: url("images/burricks.jpeg");
-    background-color: lightblue;
-    background-blend-mode: multiply;
+    background-color: darkgray;
     background-size: cover;
     background-position: center;
     
@@ -76,6 +75,13 @@ LAYOUT
     justify-content: flex-end;
     align-items: center;
     min-height: 400px;
+}
+
+.titles {
+    padding: .4em 1em;
+    background-color: rgba(0, 0, 0, .4);
+    border-radius: 15px;
+    margin-bottom: 1em;
 }
 
 

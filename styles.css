@@ -70,8 +70,8 @@ LAYOUT
 
 
 .intro {
-    background-image: url("longonot.jpg");
-    background-color: dimgray;
+    background-image: url("burricks.jpeg");
+    background-color: lightblue;
     background-blend-mode: multiply;
     background-size: cover;
     background-position: center;
@@ -91,6 +91,26 @@ LAYOUT
 }
 
 
+/********
+FORM
+********/
+
+.email-collector {
+    font-family: 'Source Sans Pro', sans-serif;
+    max-width: 250px;
+}
+
+input {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
 @media (min-width: 650px) {
     body {
         font-size: 1.125rem;
@@ -107,7 +127,7 @@ LAYOUT
 }
 
 
-@media (min-width: 960px) {
+@media (min-width: 980px) {
     body {
         display: flex;
         min-height: 100vh;

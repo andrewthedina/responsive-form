@@ -110,7 +110,7 @@ LAYOUT
 @media (min-width: 960px) {
     body {
         display: flex;
-        height: 100vh;
+        min-height: 100vh;
         font-size: 1.125rem;
     }
     

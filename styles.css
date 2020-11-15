@@ -26,10 +26,15 @@ strong {
     font-weight: 900;
 }
 
+p {
+    line-height: 1.3;
+}
+
 h1 {
     font-size: 2.25rem;
     color: #fff;
     margin: 0;
+    letter-spacing: 1px;
 }
 
 h2 {
@@ -47,25 +52,11 @@ h2 {
 }
 
 
-.small-text {
-    font-size: 0.625rem;
-    letter-spacing: 1px;
-}
-
-.top-text {
-    color: #f18119;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 900;
-    order: -1;
-}
-
 /********
 LAYOUT
 ********/
 
 .intro {
-    background-image: url("images/burricks.jpeg");
     background-color: darkgray;
     background-size: cover;
     background-position: center;
@@ -77,22 +68,43 @@ LAYOUT
     min-height: 400px;
 }
 
-.titles {
-    padding: .4em 1em;
-    background-color: rgba(0, 0, 0, .4);
-    border-radius: 15px;
-    margin-bottom: 1em;
+.burricks {
+    background-image: url("images/burricks.jpeg");
+}
+
+.deck {
+    background-image: url("images/deck0.jpeg");
 }
 
 
-.main-content {
+.titles {
+    padding: .4em 1em;
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 15px;
+    margin: 0em .5em 1em;
+}
+
+
+.info-panel {
     width: 80%;
     max-width: 450px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 4em;
     padding: 0 1em;
 }
 
+.work-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.work-item {
+    display: block;
+    padding: 1em;
+}
 
 @media (min-width: 700px) {
     body {
@@ -103,8 +115,7 @@ LAYOUT
     }
     
     .titles {
-        position: absolute;
-        top: 6%;
+        margin-top: 2em;
     }
     
     h2 {
@@ -113,14 +124,23 @@ LAYOUT
     
     .intro {
         width: 50%;
-        justify-content: flex-start;
     }
     
-    .main-content {
+    .info-panel {
         width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-bottom: 1em;
+    }
+    
+    .vtop {
+        justify-content: flex-start;   
+    }
+    
+    .vcentered {
+        margin-top: auto;
+        margin-bottom: auto;
     }
 }
 
